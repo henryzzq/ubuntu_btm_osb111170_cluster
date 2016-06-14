@@ -26,6 +26,6 @@ RUN sed -i "s/WLS_USER=\"\"/WLS_USER=\"weblogic\"/" /root/Oracle/Middleware/user
     sed -i "s/WLS_PW=\"\"/WLS_PW=\"Oracle@123\"/" /root/Oracle/Middleware/user_projects/domains/osb_domain/bin/startManagedWebLogic.sh
 
 # Expose Node Manager default port, and also default http/https ports for admin console
-EXPOSE 7001 8001 8002 5556 8453 36963
+EXPOSE 7001 8001 8002 8101 5556 8453 36963
 
 CMD ["/util/startWL_DB.sh"]
